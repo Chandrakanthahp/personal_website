@@ -1,0 +1,6 @@
+[build]
+  command = "node index.js"    # Command to start your Node.js server
+  publish = "public"           # Directory where the static assets are located
+
+[dev]
+  command = "node index.js"    # Command to start your development server
