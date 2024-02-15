@@ -1,0 +1,122 @@
+<%- include('partials/header') %>
+<div class="outer_main1">
+<div class="outer_main2">
+<div class="text_cont">
+<h1 style="color: #5837D0;margin: 0;" class="name">I'm Chandrakantha</h1><br>
+<div class="intro" style="display: flex;"><h1 style="color: #5837D0;margin: 0;font-optical-sizing: auto;font-family: Inter;font-weight: 470;display: inline;padding-right: 0.7em;">A </h1><h1 id="demo" style="color: #5837D0;margin: 0;font-optical-sizing: auto;font-family: Inter;font-weight: 470;display: inline;"> </h1></div><br><br>
+<h2 class="intro" style="color: #5837D0;margin: 0;font-optical-sizing: auto;font-family: Inter;font-weight: 500;">Hi there! I'm a web developer passionate about crafting user-friendly websites. I'm committed to continuous learning and growth in this ever-evolving field.</h2>
+</div>
+<div class="image floating">
+<img id="myimage" style="border-left:2.7px solid #5837D0;border-bottom-right-radius: 2em; filter: drop-shadow(0 0.4rem 0.2rem rgba(24, 57, 204, 0.647));background-image: url('pngimage.png');background-repeat: no-repeat;background-size: cover;background-position: center;" src="eimage.png" alt="">
+</div>
+</div>
+</div><br>
+<hr style="text-align: center;width: 80%;border: 1px solid #5837D0;">
+<div class="outer_secondpart">
+
+
+<div class="second_part">
+    <div class="second_1" data-aos="fade-right" data-aos-duration="1000">
+<h1 style="color: #000000;margin: 0;font-optical-sizing: auto;font-family: Inter;font-weight: 470;display: inline;margin: 0;font-size: 3em;">Turning </h1>
+<h1 style="color: #5837D0;margin: 0;font-optical-sizing: auto;font-family: Inter;font-weight: 470;display: inline;margin: 0;font-size:3em;"> Ideas</h1><br>
+<h1 style="color: #5837D0;margin: 0;font-optical-sizing: auto;font-family: Inter;font-weight: 470;display: inline;margin: 0;font-size:3em;">Into </h1>
+<h1 style="color: #000000;margin: 0;font-optical-sizing: auto;font-family: Inter;font-weight: 470;display: inline;margin: 0;font-size:3em;"> Interactive</h1><br>
+<h1 style="color: #5837D0;margin: 0;font-optical-sizing: auto;font-family: Inter;font-weight: 470;display: inline;margin: 0;font-size:3em;"> Web Solutions</h1>
+    </div>
+    <div class="second_12" data-aos="fade-right" data-aos-duration="1500"><img id="idea" src="ideaimage.png" alt=""></div>
+    <div class="second_2" data-aos="fade-left" data-aos-duration="1000">
+        <p>Hello, I'm Chandrakantha H P, a passionate web developer with a relentless
+        curiosity for the digital world. My journey into
+        the realm of web development began with a fascination
+        for how websites can be both functional and visually stunning.
+        This curiosity led me to embark on a dynamic career that has seen me
+        craft unique digital experiences, combining my love
+    for coding with an eye for design
+
+    </div>
+
+</div>
+</div>
+<hr style="text-align: center;width: 80%;border: 1px solid #5837D0;">
+<div class="third_part">
+    <div class="inner_thirdpart">
+        <h1 style="color: #5837D0;margin: 0;font-optical-sizing: auto;font-family: Inter;font-weight:400;display: inline;margin: 0;font-size:2.2em;" data-aos="flip-up" data-aos-duration="1500" id="about">What can I do for you ?</h1>
+        <div class="image_third">
+            <div class="first_half" data-aos="fade-up" data-aos-duration="1000">
+            <img id="thirdpart_image" src="newhtml-removebg-preview.png" alt="">
+            <img id="thirdpart_image" src="csspng-removebg-preview.png" alt="">
+            <img id="thirdpart_image" src="javascript-removebg-preview.png" alt="">
+            </div>
+            <div class="second_half" data-aos-duration="1000" data-aos="fade-up">
+            <img id="thirdpart_image" src="ReactJS-LOGO-removebg-preview.png" alt="">
+            <img src="nodejs-removebg-preview.png" alt="" id="thirdpart_image">
+            <img id="thirdpart_image" src="mongodbpng-removebg-preview.png" alt="">
+            </div>
+        </div>
+<p class="whatcanidoline" data-aos="fade-up" data-aos-duration="1500">I bring your digital vision to life through custom solutions, utilizing HTML, CSS, and
+    JavaScript, along with various
+    frameworks and libraries to create a responsive and engaging web experience.My web development services encompass
+    front-end and back-end expertise, resulting in websites that prioritize user
+    experience and mobile optimization.With a strong focus on responsive design and mobile optimization, my web
+    development work is dedicated to delivering
+    outstanding user experiences through front-end and back-end expertise.</p>
+    </div>
+</div>
+
+<script>
+    var i = 0;
+    var j = 0; 
+    var txt = [
+        'Developer.',
+        'Programmer.',
+        'Designer.'
+    ];
+    var speed = 120;
+    var pauseBeforeErase = 2000;
+    var eraseSpeed = 40;
+
+    function typeWriter() {
+        if (i < txt.length) {
+            if (j < txt[i].length) { 
+                
+                document.getElementById("demo").innerHTML += txt[i].charAt(j); 
+                j++; 
+                setTimeout(typeWriter, speed);
+            } else {
+                
+                setTimeout(function () {
+                    eraseText();
+                }, pauseBeforeErase);
+            }
+        } else {
+            
+            i = 0;
+            j = 0;
+            
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+    function eraseText() {
+        if (j >= 0) { 
+            
+            var currentText = document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML = currentText.substring(0, j);
+            j--;
+            setTimeout(eraseText, eraseSpeed);
+        } else {
+            
+            i++;
+            if (i >= txt.length) {
+                i = 0; 
+            }
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+    
+    window.onload = function () {
+        typeWriter();
+    };
+</script>
+<%- include('partials/footer') %>

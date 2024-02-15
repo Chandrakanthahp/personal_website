@@ -1,0 +1,44 @@
+<hr style="text-align: center;width: 80%;border: 1px solid #5837D0;">
+<div class="third_part" data-aos="fade-up" data-aos-duration="1000">
+    <div class="inner_thirdpart">
+    <h1 style="color: #5837D0;margin: 0;font-optical-sizing: auto;font-family: Inter;font-weight:400;display: inline;margin: 0;font-size:2.2em;" >You can also contact me on</h1>
+    <div class="linkicon">
+  <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+  <a href="https://in.linkedin.com/" class="fa fa-linkedin"></a>
+  <a href="https://telegram.org/" class="fa fa-telegram"></a>
+  <a
+    href="https://www.google.com/intl/en_in/gmail/about/"
+    class="fa fa-envelope"></a>
+</div>
+    </div>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script>
+    var path = window.location.pathname;
+
+// Set the active class based on the current URL path
+if (path === "/") {
+    document.getElementById("home").classList.add("active");
+} else if (path === "/about") {
+    document.getElementById("aboutnava").classList.add("active");
+} else if (path === "/resume.pdf") {
+    document.getElementById("resume").classList.add("active");
+} else if (path === "/contact") {
+    document.getElementById("contact").classList.add("active");
+}
+        function myFunction() {
+        var x = document.getElementById("navid");
+        if (x.className === "nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "nav";
+        }
+    }
+
+</script>
+</body>
+
+</html>
