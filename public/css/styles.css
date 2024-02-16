@@ -319,6 +319,7 @@ html {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  padding-right: 1em;
 }
 
 .nav a {
