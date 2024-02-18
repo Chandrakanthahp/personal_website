@@ -8,7 +8,7 @@ html {
 
 .name {
   font-family: "Ephesis", cursive;
-  font-size: 4em;
+  font-size: 5em;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
@@ -445,7 +445,10 @@ html {
     display: block;
   }
   .name {
-    font-size: 2em;
+    font-size: 3.5em;
+    padding: 0;
+    margin: 0;
+    line-height: 1em;
   }
 
   .outer_main2 {
