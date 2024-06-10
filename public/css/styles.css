@@ -118,6 +118,7 @@ html {
   font-style: normal;
   font-variation-settings: "slnt" 0;
   color: #5837D0;
+  text-align: justify;
 }
 
 .third_part {
@@ -143,6 +144,7 @@ html {
   font-style: normal;
   font-variation-settings: "slnt" 0;
   color: #5837D0;
+  text-align: justify;
 }
 
 .image_third {
@@ -309,8 +311,28 @@ html {
   width: 40%;
 }
 
+.darkmode{
+  border: none;
+  background: none;
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 1em 1em;
+  text-decoration: none;
+  font-size: 17px;
+  transition: font-size, 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.darkmode:hover{
+  filter: drop-shadow(0 0.4rem 0.2rem rgba(24, 57, 204, 0.647));
+}
+.darkmode.active {
+  color: #5837D0;
+}
+
 .nav {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -325,13 +347,13 @@ html {
 .nav a {
   float: left;
   display: block;
-  color: #000000;
+  color: #5837D0;
   text-align: center;
   padding: 1em 1em;
   text-decoration: none;
   font-size: 17px;
   transition: font-size, 0.2s;
-        transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
 .nav a:hover {
@@ -340,6 +362,8 @@ html {
 
 .nav a.active {
   color: #5837D0;
+  text-decoration: underline;
+  filter: drop-shadow(0 0.4rem 0.2rem rgba(24, 57, 204, 0.647));
 }
 
 .nav .icon {
@@ -417,6 +441,9 @@ html {
   font-style: normal;
   font-variation-settings: "slnt" 0;
   color: #5837D0;
+  column-fill: auto;
+  margin-bottom: 0;
+  text-align: justify;
 }
 
 .submitbutton{

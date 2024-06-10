@@ -39,6 +39,19 @@ if (path === "/") {
     }
 
 </script>
+<script>
+        function darkfunction() {
+            let element = document.body;
+            element.classList.toggle("dark");
+            let mode_id=document.getElementById("Light_dark_mode_id");
+            if(mode_id.className==="fa-solid fa-cloud-moon"){
+                mode_id.className="fa-solid fa-sun";
+            }else{
+                mode_id.className="fa-solid fa-cloud-moon";
+            }
+        }
+    </script>
+    <!-- <i class="fa-solid fa-sun"></i> -->
 </body>
 
 </html>
